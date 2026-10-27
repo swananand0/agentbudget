@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "swananand0-agentbudget"
+version = "0.1.0"
+description = "把总预算分配到各阶段，实时跟踪消耗并给出超支预警"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "swananand0" }]
+keywords = ["ai", "llm", "cli", "analysis"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://swananand0.github.io"
+Repository = "https://github.com/swananand0/agentbudget"
+Issues = "https://github.com/swananand0/agentbudget/issues"
+
+[project.scripts]
+agentbudget = "agentbudget:main"
+
+[tool.setuptools]
+py-modules = ["agentbudget"]
